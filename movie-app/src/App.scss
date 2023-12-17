@@ -1,0 +1,35 @@
+$prime-color: #00B9AE;
+$grey: #AEAFB2;
+
+.App {
+    height: 100vh;
+}
+body {
+    margin: 0;
+    /* font-family: 'Afacad', sans-serif; */
+    // font-family: 'Comfortaa', sans-serif; 
+    /* font-family: 'Kalnia', serif; */
+    font-family: 'Poppins', sans-serif;
+    // font-family: 'Roboto', sans-serif; 
+    background-color: #16181E;
+    color: #F9F9F9;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s ease;
+}
+a:hover {
+    color: #00B9AE;
+}
+input {
+    color: inherit;
+}
+.container {
+    max-width: 80%;
+    margin-inline: auto;
+}
+.footer {
+    max-width: 80%;
+    margin-inline: auto;
+}

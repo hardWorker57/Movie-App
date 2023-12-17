@@ -1,0 +1,21 @@
+$prime-color: #00B9AE;
+$grey: #21242D;
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    padding: 1rem 2rem;
+    background-color: $grey;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.menu, .library, .general {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+.menu__list {
+    font-size: 0.9em;
+}

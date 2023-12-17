@@ -1,0 +1,15 @@
+$prime-color: #00B9AE;
+$grey: #21242D;
+
+.Main {
+    min-height: 70vh;
+    // max-width: 70%;
+    margin-inline: auto;
+}
+.main_wrapper {
+    display: flex;
+}
+.movies {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.3em;
+    padding-inline: 3rem;
+}
+input {
+    background-color: transparent;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 1.8em;
+    position: relative;
+    align-items: center;
+    a {
+        position: absolute;
+        top: -0.7em;
+    }
+}
+li {
+    list-style: none;
+}
+a:hover {
+    border-bottom: 0.15em solid;
+    transform: scale(1.1) skewY(6deg);
+}
+.search {
+    padding: 1em 1.4em;
+    border-radius: 1em;
+    background-color: #21242D;
+    color: #AEAFB2;
+    input {
+        font-size: 1.5em;
+        border: none;
+        outline: none;
+    }
+}
