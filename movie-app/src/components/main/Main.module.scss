@@ -12,4 +12,14 @@ $grey: #21242D;
 .movies {
     display: flex;
     justify-content: space-between;
+    margin-left: 14em;
+    margin-right: 1.5em;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.movie_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
