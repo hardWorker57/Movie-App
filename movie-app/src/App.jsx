@@ -1,19 +1,20 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.scss'
 import Footer from './components/footer/Footer'
-import Header from './components/header/Header'
 import Main from './components/main/Main'
+import Movie from './components/main/Movie'
 
 
-function App() {
-
-  // var [search, setSearch] = useState("");
+function App() {      
+      
   return (
     <div className='App'>
-      <Header />
-      <Main  />
-      <Footer />
-    </div>
-  )
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+        <Footer />
+    </div >
+  ) 
 }
 
 export default App

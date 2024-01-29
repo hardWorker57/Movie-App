@@ -6,9 +6,6 @@ $grey: #21242D;
     // max-width: 70%;
     margin-inline: auto;
 }
-.main_wrapper {
-    display: flex;
-}
 .movies {
     display: flex;
     justify-content: space-between;
@@ -22,4 +19,9 @@ $grey: #21242D;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border: 2px solid red;
+    border-radius: 1.5em;
+    overflow: hidden;
+    width: 18.5em;
+    height: 36em;
 }
