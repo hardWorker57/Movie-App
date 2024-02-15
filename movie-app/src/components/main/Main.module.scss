@@ -3,25 +3,93 @@ $grey: #21242D;
 
 .Main {
     min-height: 70vh;
-    // max-width: 70%;
-    margin-inline: auto;
+    max-width: 80%;
+    margin-left: 15.5em;
 }
 .movies {
+    margin-top: 2em;
     display: flex;
     justify-content: space-between;
-    margin-left: 14em;
-    margin-right: 1.5em;
-    gap: 1em;
+    margin-right: 8em;
+    gap: 1.8em;
     flex-wrap: wrap;
 }
 .movie_card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 2px solid red;
-    border-radius: 1.5em;
+    border-radius: 1.8em;
     overflow: hidden;
     width: 18.5em;
-    height: 36em;
+    height: 28em;
+    transition: .4s ease;
+}
+.movie_card:hover {
+    transform: scale(0.9);
+}
+.movie_poster {
+    position: relative;
+    background: rgb(0,0,0);
+    img {
+        opacity: 0.5;
+        transition: .4s;
+        max-width: 100%;
+    }
+}
+.movie_poster:hover {
+    img{
+        opacity: .65;
+    }
+}
+.movie_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    z-index: 9;
+    top: 1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.poster {
+    margin: 4em 0;
+}
+.movie_title {
+    font-size: 1.5em;
+    margin-inline: .6em;
+    .movie_rating {
+        color: $prime-color;
+    }
+}
+.card_desc {
+    display: flex;
+    justify-content: space-between;
+    .add_favorites {
+        font-size: 1.4em;
+        border-radius: 1em;
+        padding: .8em 1.2em;
+        color: white;
+        background-color: #f9f9f946;
+        transition: all .3s;
+    }
+    .add_favorites:hover {
+        background-color: #f9f9f95d;
+    }
+    button {
+        color: #21242D;
+        background-color: $prime-color;
+        font-size: 1.4em;
+        font-weight: 700;
+        padding-inline: 2.4em;
+        border-radius: 1em;
+    }
+    button:hover {
+        background-color: #00b9ada6;
+    }
+}
+.slider_poster {
+    img {
+        height: 40em;
+        border-radius: 3em;
+    }
+    border-radius: 3em;
 }

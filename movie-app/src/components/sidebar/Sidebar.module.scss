@@ -5,17 +5,46 @@ $grey: #21242D;
     position: fixed;
     top: 0;
     height: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem 0 2rem 2rem;
     background-color: $grey;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0em;
+    ul {
+        padding: 0;
+        li {
+            padding-right: 2rem;
+            transition: .2s ease;
+            border-right: .15em solid #ffffff00;
+            position: relative;
+            a:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        li:hover {
+            border-right-color: $prime-color;
+        }
+    }
 }
 .menu, .library, .general {
     display: flex;
     flex-direction: column;
-    gap: 0.6em;
+    gap: 0.3em;
 }
 .menu__list {
     font-size: 0.9em;
+}
+li {
+    a:hover {
+        color: #00B9AE;
+    }
+    span {
+        font-size: 1.4em;
+        padding-right: 0.5em;
+    }
 }
