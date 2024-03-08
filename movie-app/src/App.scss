@@ -14,6 +14,11 @@ body {
     background-color: #16181E;
     color: #F9F9F9;
 }
+@media screen and (max-width: 1345px) {
+    body {
+        font-size: 14px;
+    }
+}
 a {
     text-decoration: none;
     color: inherit;

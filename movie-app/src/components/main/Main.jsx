@@ -18,7 +18,8 @@ const Main = () => {
   // const FEATURED_API = `https://www.omdbapi.com/?s=${search}&page=1&apikey=28b2e27a`;
   const FEATURED_API = `https://api.themoviedb.org/3/search/movie?query=${search}&api_key=a219995f42d8e2bee4b8e6bce90eab21`;
   // const HomeMovies_API = `https://api.themoviedb.org/3/movie/popular&api_key=a219995f42d8e2bee4b8e6bce90eab21`;
-  const HomeMovies_API = `https://api.themoviedb.org/3/search/movie?query=Avatar&api_key=a219995f42d8e2bee4b8e6bce90eab21`;
+  // const HomeMovies_API = `https://api.themoviedb.org/3/search/movie?query=popular&api_key=a219995f42d8e2bee4b8e6bce90eab21`;
+  const HomeMovies_API = `https://api.themoviedb.org/3/movie/popular?api_key=a219995f42d8e2bee4b8e6bce90eab21&language=en-US`;
 
   // https://api.themoviedb.org/3/movie/popular?language=en-US&page=1
   const [movies, setMovies] = useState([]);
@@ -76,19 +77,19 @@ const Main = () => {
           <Carousel
             showThumbs={false}
             autoPlay={true}
-            transitionTime={5}
+            transitionTime={2}
             infiniteLoop={true}
             showStatus={false}
           >
             {
-              homeMovies.map((movie, index) => (
+              homeMovies.slice(0, 14).map((movie, index) => (
                 <Link to={`/movie/${movie ? movie.id : ''}`} key={index}>
                   <div className={s.slider_poster}>
                     <img src={`https://image.tmdb.org/t/p/original${movie.backdrop_path ? movie.backdrop_path : ''}`} alt="No image"/>
                   </div>
                   <div className={s.slider_overlay}>
                     <span>{movie ? movie.title : ''}</span>
-                  </div>
+                  </div><br />
                 </Link>
               ))
             }
