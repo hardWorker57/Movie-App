@@ -57,7 +57,7 @@ const Main = () => {
       <div className='Header'>
           <div className="container">
               <div className={headerStyle.nav}>
-            <ul className={headerStyle.menu}>
+                <ul className={headerStyle.menu}>
                     <li><Link to="/" className="menu_list">Movies</Link></li>
                     <li><Link to="/movies/tv" className="menu_list">TV Shows</Link></li>
                     <li><Link to="/movies/anime" className="menu_list">Anime</Link></li>

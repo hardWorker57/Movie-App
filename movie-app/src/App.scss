@@ -13,11 +13,7 @@ body {
     // font-family: 'Roboto', sans-serif; 
     background-color: #16181E;
     color: #F9F9F9;
-}
-@media screen and (max-width: 1345px) {
-    body {
-        font-size: 14px;
-    }
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -48,4 +44,28 @@ button {
 button:hover {
     // color: $prime-color;
     background-color: $prime-color;
+}
+
+@media screen and (max-width: 1345px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1065px) {
+    body {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 890px) {
+    .Header {
+        margin-left: 4em;
+    }
 }
